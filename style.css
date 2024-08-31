@@ -1,0 +1,91 @@
+html{
+    text-align: center;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(104, 71, 134);
+}
+
+.container {
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+.calculator {
+    width: 320px;
+    height: 520px;
+    background-color: rgb(223, 223, 208);
+    margin: 0 auto;
+    top: 20px; /* Added missing semicolon */
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    height: 120px;
+}
+
+.history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: cornflowerblue;
+}
+
+.output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns of equal width */
+    grid-gap: 15px; /* Space between buttons */
+    height: 400px;
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.operator, .number, .empty {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.operator {
+    background-color: lightgrey;
+}
+
+.operator:active, .number:active {
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus {
+    outline: none;
+}
+
+.operator:nth-of-type(4),
+.operator:nth-of-type(8),
+.operator:nth-of-type(12),
+.operator:nth-of-type(16),
+.operator:nth-of-type(20) {
+    font-size: 20px;
+    background-color: aquamarine;
+}
