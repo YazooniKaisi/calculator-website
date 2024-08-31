@@ -86,6 +86,7 @@ body {
 .operator:nth-of-type(12),
 .operator:nth-of-type(16),
 .operator:nth-of-type(20) {
+.operator:nth-of-type(24)
     font-size: 20px;
     background-color: aquamarine;
 }
